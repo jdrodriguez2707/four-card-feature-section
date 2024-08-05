@@ -1,0 +1,32 @@
+:root {
+  /* Border top card colors */
+  --border-top-color-supervisor-card: hsl(180, 62%, 55%);
+  --border-top-color-team-builder-card: hsl(0, 78%, 62%);
+  --border-top-color-karma-card: hsl(34, 97%, 64%);
+  --border-top-color-calculator-card: hsl(212, 86%, 64%);
+
+  /* Background colors */
+  --primary-background-color: hsl(0, 0%, 98%);
+
+  /* Text colors */
+  --primary-text-color: hsl(234, 12%, 34%);
+  --secondary-text-color: hsl(229, 6%, 66%);
+
+  /* Font sizes */
+  --primary-font-size: 1.5rem;
+
+  /* Font family */
+  --primary-font-family: 'Poppins', sans-serif;
+
+  /* Font weights */
+  --font-weight-light: 200;
+  --font-weight-regular: 400;
+  --font-weight-bold: 600;
+
+  /* Breakpoints */
+  --breakpoint-mobile: 375px;
+  --breakpoint-desktop: 1440px;
+
+  /* Widths */
+  --content-max-width: 1440px;
+}

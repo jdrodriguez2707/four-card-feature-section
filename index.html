@@ -3,97 +3,110 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <!-- Favicon -->
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
 
     <title>Frontend Mentor | Four card feature section</title>
   </head>
   <body>
-    <header>
-      <div class="main-header">
-        <h1 class="main-header__title">
-          Reliable, efficient delivery
-          <span class="main-header__title-bold">Powered by Technology</span>
-        </h1>
-        <p>
-          Our Artificial Intelligence powered tools use millions of project data
-          points to ensure that your project is successful
+    <div class="main-container">
+      <header>
+        <div class="main-header">
+          <h1 class="main-header__title">
+            Reliable, efficient delivery
+            <span class="main-header__title-bold">Powered by Technology</span>
+          </h1>
+          <p>
+            Our Artificial Intelligence powered tools use millions of project
+            data points to ensure that your project is successful
+          </p>
+        </div>
+      </header>
+
+      <main>
+        <div class="card-container">
+          <article
+            class="card-container__card card-container__card--border-top-cyan"
+          >
+            <h2 class="card-container__card-title">Supervisor</h2>
+            <p class="card-container__card-body">
+              Monitors activity to identify project roadblocks
+            </p>
+            <img
+              class="card-container__card-icon"
+              src="./images/icon-supervisor.svg"
+              alt="Icon supervisor"
+            />
+          </article>
+
+          <article
+            class="card-container__card card-container__card--border-top-red"
+          >
+            <h2 class="card-container__card-title">Team Builder</h2>
+            <p class="card-container__card-body">
+              Scans our talent network to create the optimal team for your
+              project
+            </p>
+            <img
+              class="card-container__card-icon"
+              src="./images/icon-team-builder.svg"
+              alt="Icon team builder"
+            />
+          </article>
+
+          <article
+            class="card-container__card card-container__card--border-top-orange"
+          >
+            <h2 class="card-container__card-title">Karma</h2>
+            <p class="card-container__card-body">
+              Regularly evaluates our talent to ensure quality
+            </p>
+            <img
+              class="card-container__card-icon"
+              src="./images/icon-karma.svg"
+              alt="Icon karma"
+            />
+          </article>
+
+          <article
+            class="card-container__card card-container__card--border-top-blue"
+          >
+            <h2 class="card-container__card-title">Calculator</h2>
+            <p class="card-container__card-body">
+              Uses data from past projects to provide better delivery estimates
+            </p>
+            <img
+              class="card-container__card-icon"
+              src="./images/icon-calculator.svg"
+              alt="Icon calculator"
+            />
+          </article>
+        </div>
+      </main>
+
+      <footer>
+        <p class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Your Name Here</a>.
         </p>
-      </div>
-    </header>
-
-    <main>
-      <div class="main-container">
-        <article
-          class="main-container__card main-container__card--border-top-sky-blue"
-        >
-          <h2 class="main-container__card-title">Supervisor</h2>
-          <p class="main-container__card-body">
-            Monitors activity to identify project roadblocks
-          </p>
-          <img
-            class="main-container__card-icon"
-            src="./images/icon-supervisor.svg"
-            alt="Icon supervisor"
-          />
-        </article>
-
-        <article
-          class="main-container__card main-container__card--border-top-red"
-        >
-          <h2 class="main-container__card-title">Team Builder</h2>
-          <p class="main-container__card-body">
-            Scans our talent network to create the optimal team for your project
-          </p>
-          <img
-            class="main-container__card-icon"
-            src="./images/icon-team-builder.svg"
-            alt="Icon team builder"
-          />
-        </article>
-
-        <article
-          class="main-container__card main-container__card--border-top-orange"
-        >
-          <h2 class="main-container__card-title">Karma</h2>
-          <p class="main-container__card-body">
-            Regularly evaluates our talent to ensure quality
-          </p>
-          <img
-            class="main-container__card-icon"
-            src="./images/icon-karma.svg"
-            alt="Icon karma"
-          />
-        </article>
-
-        <article
-          class="main-container__card main-container__card--border-top-blue"
-        >
-          <h2 class="main-container__card-title">Calculator</h2>
-          <p class="main-container__card-body">
-            Uses data from past projects to provide better delivery estimates
-          </p>
-          <img
-            class="main-container__card-icon"
-            src="./images/icon-calculator.svg"
-            alt="Icon calculator"
-          />
-        </article>
-      </div>
-    </main>
-
-    <footer>
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
-      </p>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
