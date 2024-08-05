@@ -13,7 +13,8 @@
   --secondary-text-color: hsl(229, 6%, 66%);
 
   /* Font sizes */
-  --primary-font-size: 1.5rem;
+  --large-font-size: 2rem;
+  --small-font-size: 1.5rem;
 
   /* Font family */
   --primary-font-family: 'Poppins', sans-serif;
@@ -29,4 +30,37 @@
 
   /* Widths */
   --content-max-width: 1440px;
+}
+
+.main-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  place-items: center;
+  margin: 0 auto;
+  padding: 48px 20px 24px;
+  font-family: var(--primary-font-family);
+  max-width: var(--content-max-width);
+  min-height: inherit;
+  background-color: var(--primary-background-color);
+}
+
+.main-header {
+  text-align: center;
+}
+
+.main-header__title {
+  margin-bottom: 16px;
+  font-size: var(--large-font-size);
+  color: var(--primary-text-color);
+  font-weight: var(--font-weight-light);
+}
+
+.main-header__title-bold {
+  font-weight: var(--font-weight-bold);
+}
+
+.main-header__paragraph {
+  font-size: var(--small-font-size);
+  color: var(--secondary-text-color);
+  font-weight: var(--font-weight-regular);
 }
