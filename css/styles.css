@@ -32,6 +32,10 @@
   --content-max-width: 1440px;
 }
 
+body {
+  background-color: var(--primary-background-color);
+}
+
 .main-container {
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -41,7 +45,6 @@
   font-family: var(--primary-font-family);
   max-width: var(--content-max-width);
   min-height: inherit;
-  background-color: var(--primary-background-color);
 }
 
 .main-header {
