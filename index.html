@@ -20,13 +20,18 @@
     <!-- Styles -->
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="./css/desktop.css"
+      media="screen and (min-width: 1120px)"
+    />
 
     <title>Frontend Mentor | Four card feature section</title>
   </head>
   <body>
     <div class="main-container">
-      <header>
-        <div class="main-header">
+      <header class="main-header">
+        <div class="main-header__container">
           <h1 class="main-header__title">
             Reliable, efficient delivery
             <span class="main-header__title-bold">Powered by Technology</span>
@@ -38,7 +43,7 @@
         </div>
       </header>
 
-      <main>
+      <main class="main-content">
         <div class="card-container">
           <article
             class="card-container__card card-container__card--border-top-cyan"
@@ -54,34 +59,36 @@
             />
           </article>
 
-          <article
-            class="card-container__card card-container__card--border-top-red"
-          >
-            <h2 class="card-container__card-title">Team Builder</h2>
-            <p class="card-container__card-body">
-              Scans our talent network to create the optimal team for your
-              project
-            </p>
-            <img
-              class="card-container__card-icon"
-              src="./images/icon-team-builder.svg"
-              alt="Icon team builder"
-            />
-          </article>
+          <div>
+            <article
+              class="card-container__card card-container__card--border-top-red"
+            >
+              <h2 class="card-container__card-title">Team Builder</h2>
+              <p class="card-container__card-body">
+                Scans our talent network to create the optimal team for your
+                project
+              </p>
+              <img
+                class="card-container__card-icon"
+                src="./images/icon-team-builder.svg"
+                alt="Icon team builder"
+              />
+            </article>
 
-          <article
-            class="card-container__card card-container__card--border-top-orange"
-          >
-            <h2 class="card-container__card-title">Karma</h2>
-            <p class="card-container__card-body">
-              Regularly evaluates our talent to ensure quality
-            </p>
-            <img
-              class="card-container__card-icon"
-              src="./images/icon-karma.svg"
-              alt="Icon karma"
-            />
-          </article>
+            <article
+              class="card-container__card card-container__card--border-top-orange"
+            >
+              <h2 class="card-container__card-title">Karma</h2>
+              <p class="card-container__card-body">
+                Regularly evaluates our talent to ensure quality
+              </p>
+              <img
+                class="card-container__card-icon"
+                src="./images/icon-karma.svg"
+                alt="Icon karma"
+              />
+            </article>
+          </div>
 
           <article
             class="card-container__card card-container__card--border-top-blue"
@@ -104,7 +111,8 @@
           Challenge by
           <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
             >Frontend Mentor</a
-          >. Coded by <a href="https://github.com/jdrodriguez2707">Johan Rodriguez</a>.
+          >. Coded by
+          <a href="https://github.com/jdrodriguez2707">Johan Rodriguez</a>.
         </p>
       </footer>
     </div>
