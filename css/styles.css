@@ -113,3 +113,8 @@
   margin-top: 32px;
   align-self: flex-end;
 }
+
+.attribution {
+  text-align: center;
+  font-size: var(--small-font-size);
+}
